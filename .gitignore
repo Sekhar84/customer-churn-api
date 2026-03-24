@@ -1,0 +1,23 @@
+# Data — never commit customer data
+data/
+*.csv
+
+# Models — large binary files, go to S3/MLflow
+models/
+*.pkl
+*.joblib
+
+# Secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Mac
+.DS_Store
