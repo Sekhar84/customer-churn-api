@@ -183,6 +183,7 @@ def train(C=1.0, max_iter=1000, run_name="logistic-regression"):
         metrics = {
             "accuracy": round(accuracy, 4),
             "auc":      round(auc, 4),
+            "auc_pr":   round(auc_pr, 4),
             "C":        C,
         }
         with open(MODELS_DIR / "metrics.json", "w") as f:
